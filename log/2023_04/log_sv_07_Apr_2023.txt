@@ -1,0 +1,2 @@
+[2023/04/07 11:57:26:094] User: admin - Name: admin - Pass: 1 - IP: 127.0.0.1
+[2023/04/07 11:59:27:574] User: admin - Name: admin - Pass: 1 - IP: 127.0.0.1

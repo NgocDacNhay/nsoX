@@ -1,0 +1,14 @@
+[2023/08/19 05:57:56:165] admin đã mua 1 item 507 với giá 5400000 xu 0 yên 0 lượng
+[2023/08/19 06:06:53:420] admin đã mua 1 item 796 với giá 0 xu 0 yên 2000 lượng
+[2023/08/19 06:23:31:540] admin đã mua 1000 item 340 với giá 0 xu 0 yên 10000 lượng
+[2023/08/19 06:25:43:930] dacdz đã mua 3 item 23 với giá 0 xu 600 yên 0 lượng
+[2023/08/19 06:32:08:113] dacdz đã mua 1 item 24 với giá 0 xu 450 yên 0 lượng
+[2023/08/19 06:55:06:536] admin đã mua 1 item 271 với giá 0 xu 0 yên 500 lượng
+[2023/08/19 06:55:07:319] admin đã mua 1 item 271 với giá 0 xu 0 yên 500 lượng
+[2023/08/19 06:55:44:867] admin đã mua 1 item 189 với giá 4000 xu 0 yên 0 lượng
+[2023/08/19 06:59:26:918] admin đã mua 1000 item 592 với giá 0 xu 0 yên 500000 lượng
+[2023/08/19 07:00:26:581] admin đã mua 1000 item 593 với giá 0 xu 0 yên 500000 lượng
+[2023/08/19 07:01:50:507] admin đã mua 1000 item 592 với giá 0 xu 0 yên 500000 lượng
+[2023/08/19 07:06:48:740] admin đã mua 10000 item 593 với giá 0 xu 0 yên 5000000 lượng
+[2023/08/19 07:08:35:548] admin đã mua 1 item 94 với giá 3000 xu 0 yên 0 lượng
+[2023/08/19 07:19:42:729] admin đã mua 1 item 95 với giá 15000 xu 0 yên 0 lượng
