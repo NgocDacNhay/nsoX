@@ -99,6 +99,7 @@ public class useItem {
                     }
                 }
                 p.nj.get().ItemBody[data.type+16] = item;
+                Service.CharViewInfo(p, false);
                 if ((item.id == 813 || item.id == 814 || item.id == 815 || item.id == 816 || item.id == 817) && !item.isLock) {
                     byte i;
                     int op;
@@ -127,10 +128,12 @@ public class useItem {
                 } else if (p.nj.isHuman) {
                     ThoiTrang.setThoiTrang(p.nj, item.id);
                 }
+                Service.CharViewInfo(p, false);
             } else {
                 itemb = p.nj.get().ItemBody[data.type];
                 p.nj.ItemBag[index] = itemb;
                 p.nj.get().ItemBody[data.type] = item;
+                Service.CharViewInfo(p, false);
             }
 
             if (data.type == 10) {
@@ -2662,14 +2665,10 @@ public class useItem {
 //        if (item.id >= 795) {
 //            p.sendInfo(false);
 //        }
-        if ((item.id >= 795 && item.id <= 805) || (item.id >= 813 && item.id <= 817) || (item.id >= 825 && item.id <= 827) || (item.id >= 830 && item.id <= 832)) {
-            final Message m1 = new Message(57);
-            m1.writer().flush();
-            p.session.sendMessage(m1);
-            m1.cleanup();
-            if (!p.nj.isTrade) {
+        if ((item.id >= 795 && item.id <= 805) || (item.id >= 813 && item.id <= 817) || (item.id >= 825 && item.id <= 827) || (item.id >= 830 && item.id <= 832) || item.id >= 0) {
+            
                 Service.CharViewInfo(p, false);
-            }
+            
         }
 
         TaskHandle.useItemUpdate(p.nj, item.id);

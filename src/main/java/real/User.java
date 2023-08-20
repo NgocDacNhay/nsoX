@@ -18,9 +18,6 @@ import patch.interfaces.SendMessage;
 import patch.tournament.Tournament;
 import server.*;
 import tasks.TaskHandle;
-import threading.Manager;
-import threading.Map;
-import threading.Message;
 import threading.*;
 
 import java.io.ByteArrayOutputStream;
@@ -1660,9 +1657,9 @@ public class User extends Actor implements SendMessage {
         if (item == null || (ItemData.ItemDataId(item.id).isUpToUp && (num <= 0 || num > item.quantity))) {
             return;
         }
-        if (ItemData.ItemDataId(item.id).isUpToUp) {
-            num = 1;
-        }
+    //    if (ItemData.ItemDataId(item.id).isUpToUp) {
+    //        num = 1;
+    //    }
         if (ItemData.isTypeBody(item.id) && item.getUpgrade() > 0) {
             this.session.sendMessageLog("Không thể bán trang bị còn nâng cấp");
             return;
@@ -1714,6 +1711,11 @@ public class User extends Actor implements SendMessage {
         final Item itembody = this.nj.get().ItemBody[index];
         this.nj.ItemBag[idItemBag] = itembody;
         this.nj.get().ItemBody[index] = null;
+        if (this.nj.isNhanban) {
+            ThoiTrang.removeThoiTrangPT(this.nj.clone, itembody.id);
+        } else if (this.nj.isHuman) {
+            ThoiTrang.removeThoiTrang(this.nj, itembody.id);
+        }
         if (itembody.id == 568) {
             removeEffect(38);
         }

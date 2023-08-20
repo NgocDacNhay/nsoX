@@ -166,6 +166,16 @@ public class util {
         return from + util.rand.nextInt(to + 1 - from);
     }
 
+    public static short nextShort(final int i, final int j) {
+        int to = j;
+        int from = i;
+        if (j < i) {
+            to = i;
+            from = j;
+        }
+        return (short) (from + util.rand.nextInt(to + 1 - from));
+    }
+
     public static int nextInt(final int max) {
         return util.rand.nextInt(max);
     }

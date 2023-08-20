@@ -1779,7 +1779,7 @@ public class Place {
             }
             short itemmapid = this.getItemMapNotId();
             ItemMap item = new ItemMap();
-            item.x = p.nj.get().x;
+            item.x = (short) (p.nj.get().x + util.nextShort(-35, 35));
             item.y = p.nj.get().y;
             item.itemMapId = itemmapid;
             item.item = itembag;
